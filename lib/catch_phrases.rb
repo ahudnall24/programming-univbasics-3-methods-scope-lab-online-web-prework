@@ -1,3 +1,5 @@
+#lib/catch_phrases.rb
+
 describe "mario" do
   it "puts out 'It's-a me, Mario!'" do
     phrase = "It's-a me, Mario!"
@@ -15,6 +17,13 @@ def link do
     phrase="It's Dangerous To Go Alone! Take This"
     expect{link}.to output("It's Dangerous to Go Alone!Take This\n").to.stdout
     
+    describe "any_phrase" do
+  it "takes in an argument and puts out the catch phrase" do
+    phrase = "Do A Barrel Roll!"
+    expect{any_phrase(phrase)}.to output("Do A Barrel Roll!\n").to_stdout
+  end
+  
+end
 rspec spec/catch_phrases_spec.rb
 spec/catch_phrase_spec.rb
 
