@@ -23,6 +23,7 @@ def link do
     expect{any_phrase(phrase)}.to output("Do A Barrel Roll!\n").to_stdout
   end
   
+   rspec spec/catch_phrases_spec.rb 
 end
 rspec spec/catch_phrases_spec.rb
 spec/catch_phrase_spec.rb
